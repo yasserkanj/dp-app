@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group([
+    'prefix'    => 'payment',
+    'namespace' => 'Payment',
+], function(){
+    Route::post('/payments/pay', 'PaymentController@pay')->name('pay');
+ 
 });
