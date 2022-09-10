@@ -1,5 +1,5 @@
 <?php
-namespace App\PaymentGateways;
+namespace App\PaymentGateways\Contracts;
 
 
 interface Payment {

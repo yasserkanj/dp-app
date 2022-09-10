@@ -3,6 +3,7 @@ namespace App\PaymentGateways;
 
 use App\Helpers\FileHelper;
 use App\Helpers\MapperHelper;
+use App\PaymentGateways\Contracts\Payment;
 use App\PaymentGateways\Mapper\PaymentResponse;
 
 class PayPal implements Payment{
