@@ -26,7 +26,7 @@ it will help running applications on the PHP development server url http://lcoal
 ## API Documentation
 https://documenter.getpostman.com/view/8046650/VVdgc6YQ
 
-## Assignment Desctiption
+## Assignment Description
 - We want a technical solution that makes us able to quickly add a new payment method with
 clean code that fulfills the principles of SOLID, each payment method must be able to connect
 with it and use one of its features and also store the result in the database and
