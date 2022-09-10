@@ -31,4 +31,23 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'paypal'    => [
+        'mode'          => env('PAYPAL_MODE',''),
+        'username'      => env('PAYPAL_SANDBOX_API_USERNAME',''),
+        'secret'        => env('PAYPAL_SANDBOX_API_SECRET',''),
+        'currency'      => env('PAYPAL_CURRENCY',''),
+        'cert'          => env('PAYPAL_SANDBOX_API_CERTIFICATE',''),
+        'baseUri'       => '',
+        'class'         => 'App\\PaymentGateways\\PayPal',
+    ],
+    'visa'    => [
+        'mode'          => env('VISA_MODE',''),
+        'username'      => env('VISA_SANDBOX_API_USERNAME',''),
+        'secret'        => env('VISA_SANDBOX_API_SECRET',''),
+        'currency'      => env('VISA_CURRENCY',''),
+        'cert'          => env('VISA_SANDBOX_API_CERTIFICATE',''),
+        'baseUri'       => '',
+        'class'         => 'App\\PaymentGateways\\Visa',
+    ],
+
 ];

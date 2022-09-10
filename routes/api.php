@@ -16,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([
     'prefix'    => 'payment',
-    'namespace' => 'Payment',
+    'namespace' => 'API\Payment',
 ], function(){
-    Route::post('/payments/pay', 'PaymentController@pay')->name('pay');
+    Route::post('/pay', 'PaymentController@pay');
+    Route::post('/withdraw', 'PaymentController@withdraw');
  
 });

@@ -15,10 +15,10 @@ class TransactionResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'             => $this->id,
+            // 'id'             => $this->id,
             // 'transaction_id' => $this->transaction_id,
             'status'         => $this->status,
-            'info'           => $this->info,
+            // 'info'           => $this->info,
         ];
     }
 }

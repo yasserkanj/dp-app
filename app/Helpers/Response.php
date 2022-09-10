@@ -22,6 +22,7 @@ class Response {
     public const NOT_ALLOWED            = 'response.not_allowed';
     public const NOT_FOUND              = 'response.not_found';
 
+    public const PLATFORM_NOT_SUPPORTED = 'platform_is_not_supported';
 
     /**
      * @param mixed $message
