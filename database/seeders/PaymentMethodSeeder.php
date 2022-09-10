@@ -22,7 +22,7 @@ class PaymentMethodSeeder extends Seeder
         ]);
 
         PaymentMethod::create([
-            'name'          => 'visa',
+            'name'          => 'Visa',
             'class_name'    => 'App\\PaymentGateways\\Visa',   
         ]);
     }

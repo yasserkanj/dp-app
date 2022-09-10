@@ -28,7 +28,7 @@ class WithdrawRequest extends FormRequest
     public function rules()
     {
         return [
-            'payment_method'    => 'required|string',
+            'payment_method'    => 'required|exists:payment_methods,name',
             'amount'            => 'required|numeric',
             'product_id'        => 'required|integer',
         ];
